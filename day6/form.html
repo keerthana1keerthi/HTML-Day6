@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration forms</h1>
+
+    <form action="./welcom.html" method="post">
+        <label for="fname">first name</label><br>
+        <input type="text" id="fname" name="first_name" required value ="abc" minlength="3" readonly ><br><br>
+
+        <label for="lname">lastname</label><br>
+        <input type="text" id="lname" name="lastname" disabled ><br><br>
+
+        <label for="email">email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="pass">password</label><br>
+        <input type="password" id="pass" name="password" required><br><br>
+
+        <label for="date">dob</label><br>
+        <input type="date" id="date" name="date" required min="2000-01-01" max="2040-12-31"><br><br>
+
+        <label for="age">age</label><br>
+        <input typr="number" id="age" name="age" min="18" max="60"><br><br>
+
+        
+        <p>select gender</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">other</label><br><br>
+
+        <p>are you citizen of india or not</p>
+        <input type="radio" id="yes" name="iscitizen" value="true" required>
+        <label for="yes">yes</label>
+ 
+        <input type="radio" id="no" name="iscitizen" value="false">
+        <label for="no">no</label><br><br>
+
+        <p>select technologies</p>
+        <input type="checkbox" id="html" name="technologies" value="html">
+        <label for="html">html</label>
+
+        <input type="checkbox" id="css" name="technologies" value="css">
+        <label for="css">css</label>
+
+        <input type="checkbox" id="js" name="technologies" value="js">
+        <label for="js">js</label> <br><br>
+
+        <label for="desc">Provide your comments</label><br>
+        <textarea  name="description" id="desc"></textarea><br><br>
+
+        <label for="profile">Upload Profile pic</label>
+        <input type="file" id="profile" name="profile_picture" accept="application/" multiple> <br><br> <!---- accept="image/png"><accept=application/*-->
+
+        <input type="checkbox" id="terms" required> <label for="terms">I agree to terms and conditions</label><br><br>
+
+       <label for="country">select country</label> <br>
+        <select name="country" id="country" required >
+              <option value="india">INDIA</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+        </select> <br><br>
+
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+
+
+    </form>
+</body>
+</html>
